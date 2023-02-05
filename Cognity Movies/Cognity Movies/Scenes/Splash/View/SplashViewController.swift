@@ -27,7 +27,6 @@ final class SplashViewController: UIViewController, BaseProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("OK")
         self.setup()
         self.viewModel?.update(routing: .home)
     }

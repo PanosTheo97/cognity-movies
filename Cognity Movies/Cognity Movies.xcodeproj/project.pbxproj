@@ -37,6 +37,13 @@
 		86EE1AFE298F97B000F2EBCA /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86EE1AFD298F97B000F2EBCA /* Splash.storyboard */; };
 		86EE1B00298F97C700F2EBCA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1AFF298F97C700F2EBCA /* SplashViewController.swift */; };
 		86EE1B02298F985400F2EBCA /* SplashModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B01298F985400F2EBCA /* SplashModule.swift */; };
+		86EE1B05298FA14A00F2EBCA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B04298FA14A00F2EBCA /* NetworkManager.swift */; };
+		86EE1B07298FA19E00F2EBCA /* RequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B06298FA19E00F2EBCA /* RequestConvertible.swift */; };
+		86EE1B09298FA24D00F2EBCA /* TVMAZE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B08298FA24D00F2EBCA /* TVMAZE.swift */; };
+		86EE1B0C298FA2EE00F2EBCA /* ShowsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B0B298FA2EE00F2EBCA /* ShowsService.swift */; };
+		86EE1B11298FA39D00F2EBCA /* ShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B10298FA39D00F2EBCA /* ShowModel.swift */; };
+		86EE1B13298FA43F00F2EBCA /* ShowImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B12298FA43F00F2EBCA /* ShowImageModel.swift */; };
+		86EE1B15298FA4F600F2EBCA /* ShowRatingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B14298FA4F600F2EBCA /* ShowRatingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +81,13 @@
 		86EE1AFD298F97B000F2EBCA /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		86EE1AFF298F97C700F2EBCA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		86EE1B01298F985400F2EBCA /* SplashModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashModule.swift; sourceTree = "<group>"; };
+		86EE1B04298FA14A00F2EBCA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		86EE1B06298FA19E00F2EBCA /* RequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConvertible.swift; sourceTree = "<group>"; };
+		86EE1B08298FA24D00F2EBCA /* TVMAZE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMAZE.swift; sourceTree = "<group>"; };
+		86EE1B0B298FA2EE00F2EBCA /* ShowsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsService.swift; sourceTree = "<group>"; };
+		86EE1B10298FA39D00F2EBCA /* ShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModel.swift; sourceTree = "<group>"; };
+		86EE1B12298FA43F00F2EBCA /* ShowImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageModel.swift; sourceTree = "<group>"; };
+		86EE1B14298FA4F600F2EBCA /* ShowRatingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRatingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +147,8 @@
 		86936C5F298D11F3007A5970 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				86EE1B0D298FA31100F2EBCA /* Models */,
+				86EE1B03298FA12E00F2EBCA /* Networking */,
 				86936C76298D13EB007A5970 /* Classes */,
 				86936C6B298D133C007A5970 /* Protocols */,
 				86936C60298D1227007A5970 /* Extensions */,
@@ -296,6 +312,35 @@
 			path = DIContainer;
 			sourceTree = "<group>";
 		};
+		86EE1B03298FA12E00F2EBCA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				86EE1B0A298FA2E100F2EBCA /* Services */,
+				86EE1B04298FA14A00F2EBCA /* NetworkManager.swift */,
+				86EE1B06298FA19E00F2EBCA /* RequestConvertible.swift */,
+				86EE1B08298FA24D00F2EBCA /* TVMAZE.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		86EE1B0A298FA2E100F2EBCA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				86EE1B0B298FA2EE00F2EBCA /* ShowsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		86EE1B0D298FA31100F2EBCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86EE1B10298FA39D00F2EBCA /* ShowModel.swift */,
+				86EE1B12298FA43F00F2EBCA /* ShowImageModel.swift */,
+				86EE1B14298FA4F600F2EBCA /* ShowRatingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D3153B17012F8AC614E711DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,14 +464,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EE1B05298FA14A00F2EBCA /* NetworkManager.swift in Sources */,
 				86EE1AFC298F978E00F2EBCA /* SplashViewModel.swift in Sources */,
 				86EE1AF1298F96EC00F2EBCA /* AppDIContainer.swift in Sources */,
 				86EE1AE7298F95CB00F2EBCA /* MainNavigationController.swift in Sources */,
+				86EE1B13298FA43F00F2EBCA /* ShowImageModel.swift in Sources */,
+				86EE1B15298FA4F600F2EBCA /* ShowRatingModel.swift in Sources */,
 				86936C78298D13F8007A5970 /* Observable.swift in Sources */,
 				86936C73298D13A7007A5970 /* JSONExtension.swift in Sources */,
 				86EE1AFA298F975B00F2EBCA /* SplashFlowCoordinator.swift in Sources */,
 				86936C4C298D0DCC007A5970 /* AppDelegate.swift in Sources */,
 				86EE1AF8298F974300F2EBCA /* SplashDIContainer.swift in Sources */,
+				86EE1B07298FA19E00F2EBCA /* RequestConvertible.swift in Sources */,
 				86936C6D298D134E007A5970 /* ReusableViewProtocol.swift in Sources */,
 				86EE1AD3298F946F00F2EBCA /* BaseViewModelProtocol.swift in Sources */,
 				86936C68298D12C3007A5970 /* UIImageExtension.swift in Sources */,
@@ -435,10 +484,13 @@
 				86EE1AEF298F96B700F2EBCA /* AppFlowCoordinator.swift in Sources */,
 				86EE1AED298F968F00F2EBCA /* AppViewModel.swift in Sources */,
 				86936C6A298D12F4007A5970 /* UITableVIewExtension.swift in Sources */,
+				86EE1B11298FA39D00F2EBCA /* ShowModel.swift in Sources */,
 				86936C71298D1391007A5970 /* UIImageViewExtension.swift in Sources */,
 				86EE1B02298F985400F2EBCA /* SplashModule.swift in Sources */,
+				86EE1B0C298FA2EE00F2EBCA /* ShowsService.swift in Sources */,
 				86EE1AD7298F94B900F2EBCA /* BaseProtocol.swift in Sources */,
 				86EE1B00298F97C700F2EBCA /* SplashViewController.swift in Sources */,
+				86EE1B09298FA24D00F2EBCA /* TVMAZE.swift in Sources */,
 				86936C64298D1272007A5970 /* UIViewControllerExtension.swift in Sources */,
 				86936C66298D128B007A5970 /* UIWindowExtension.swift in Sources */,
 				86936C4E298D0DCC007A5970 /* SceneDelegate.swift in Sources */,
