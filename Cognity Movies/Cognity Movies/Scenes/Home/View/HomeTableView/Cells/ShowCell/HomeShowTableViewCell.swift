@@ -66,7 +66,11 @@ class HomeShowTableViewCell: UITableViewCell {
     func setup(showData: ShowModel) {
         self.showImageView.displayImage(url: showData.image?.getThumbnailUrl(), placeholder: nil)
         self.showNameLabel.text = showData.name
-        self.ratingLabel.text = "Rating: \(showData.rating?.average ?? 0.0)"
+        if let showRating = showData.rating?.average {
+            self.ratingLabel.text = "Rating: \(showRating)"
+        } else {
+            self.ratingLabel.text = "Rating: -"
+        }
         self.setNeedsDisplay()
     }
 }

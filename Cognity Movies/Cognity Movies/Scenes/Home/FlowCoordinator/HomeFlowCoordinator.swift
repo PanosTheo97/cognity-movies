@@ -25,8 +25,8 @@ final class HomeFlowCoordinator: BaseFlowCoordinatorProtocol {
     // MARK: - Methods
 
     func moveToShowDetails(showData: ShowModel) {
-//        guard let heroDetailsViewController = self.homeDIContainer.heroDetailsModule.makeHeroDetailsViewController(heroDetails: heroData, heroDetailsViewControllerDelegate: self.homeViewController) else { return }
-//        self.homeViewController?.navigationController?.pushViewController(heroDetailsViewController, animated: true)
+        guard let showDetailsViewController = self.homeDIContainer.showDetailsModule.makeShowDetailsViewController(showDetails: showData) else { return }
+        self.homeViewController?.navigationController?.pushViewController(showDetailsViewController, animated: true)
     }
 
 }
