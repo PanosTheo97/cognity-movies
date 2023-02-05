@@ -15,9 +15,10 @@ enum HomeTableViewDataEnum {
 
 protocol HomeTableViewProtocol: AnyObject {
     func moveToShowDetails(showData: ShowModel)
+    func refresh()
 }
 
-final class HomeTableView: UITableView {
+class HomeTableView: RefreshableTableView {
     
     // MARK: - Properties
     
@@ -49,6 +50,10 @@ final class HomeTableView: UITableView {
     
     func setup(homeTableViewDelegate: HomeTableViewProtocol?) {
         self.homeTableViewDelegate = homeTableViewDelegate
+    }
+    
+    override func didRefreshTrigger() {
+        self.homeTableViewDelegate?.refresh()
     }
   
 }

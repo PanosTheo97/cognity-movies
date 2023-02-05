@@ -78,6 +78,7 @@
 		86EE1B6F298FD6EB00F2EBCA /* ShowDetailsShowDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86EE1B6D298FD6EB00F2EBCA /* ShowDetailsShowDetailsTableViewCell.xib */; };
 		86EE1B72298FDADE00F2EBCA /* ShowDetailsSetupUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B71298FDADE00F2EBCA /* ShowDetailsSetupUseCase.swift */; };
 		86EE1B7429900F0400F2EBCA /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B7329900F0400F2EBCA /* DoubleExtension.swift */; };
+		86EE1B762990119A00F2EBCA /* RefreshableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B752990119A00F2EBCA /* RefreshableTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +157,7 @@
 		86EE1B6D298FD6EB00F2EBCA /* ShowDetailsShowDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowDetailsShowDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		86EE1B71298FDADE00F2EBCA /* ShowDetailsSetupUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsSetupUseCase.swift; sourceTree = "<group>"; };
 		86EE1B7329900F0400F2EBCA /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		86EE1B752990119A00F2EBCA /* RefreshableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				86936C77298D13F8007A5970 /* Observable.swift */,
+				86EE1B752990119A00F2EBCA /* RefreshableTableView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -824,6 +827,7 @@
 				86936C68298D12C3007A5970 /* UIImageExtension.swift in Sources */,
 				86936C6F298D1375007A5970 /* UICollectionViewExtension.swift in Sources */,
 				86EE1AE1298F957B00F2EBCA /* MainModule.swift in Sources */,
+				86EE1B762990119A00F2EBCA /* RefreshableTableView.swift in Sources */,
 				86EE1AEF298F96B700F2EBCA /* AppFlowCoordinator.swift in Sources */,
 				86EE1B5F298FD2FC00F2EBCA /* ShowDetailsTableView.swift in Sources */,
 				86EE1B20298FA77900F2EBCA /* HomeViewModel.swift in Sources */,

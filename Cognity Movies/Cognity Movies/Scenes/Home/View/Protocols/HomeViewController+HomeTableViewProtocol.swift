@@ -11,4 +11,8 @@ extension HomeViewController: HomeTableViewProtocol {
     func moveToShowDetails(showData: ShowModel) {
         self.viewModel?.update(routing: .showDetails(showData: showData))
     }
+    
+    func refresh() {
+        self.viewModel?.executeGetShowsUseCase()
+    }
 }
