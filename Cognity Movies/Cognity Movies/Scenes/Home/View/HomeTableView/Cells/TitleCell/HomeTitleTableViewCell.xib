@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="HomeTitleTableViewCellIdentifier" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="HomeTitleTableViewCell" customModule="Cognity_Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9f7-zI-086">
+                        <rect key="frame" x="0.0" y="115" width="320" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="YuQ-fP-kqb"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ppj-2w-uMg">
+                        <rect key="frame" x="120" y="81.5" width="80" height="25.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ppj-2w-uMg" secondAttribute="height" multiplier="253:80" id="8g9-Yd-9oy"/>
+                            <constraint firstAttribute="width" constant="80" id="9kw-mb-hcO"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9f7-zI-086" secondAttribute="trailing" id="4gA-bI-r1S"/>
+                    <constraint firstItem="9f7-zI-086" firstAttribute="top" secondItem="ppj-2w-uMg" secondAttribute="bottom" constant="8" id="LRh-gV-iF3"/>
+                    <constraint firstItem="9f7-zI-086" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="M8d-xR-MUW"/>
+                    <constraint firstAttribute="bottom" secondItem="9f7-zI-086" secondAttribute="bottom" id="Ry0-lz-sYZ"/>
+                    <constraint firstItem="ppj-2w-uMg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="df8-mv-Cfl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="separatorView" destination="9f7-zI-086" id="b93-AE-jLL"/>
+                <outlet property="tvMazeImageView" destination="ppj-2w-uMg" id="QHF-6o-dkz"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

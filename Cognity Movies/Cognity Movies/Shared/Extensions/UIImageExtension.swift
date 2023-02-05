@@ -10,6 +10,7 @@ import UIKit
 
 enum Image: String {
     case tvMaze
+    case arrow
 }
 
 extension UIImage {

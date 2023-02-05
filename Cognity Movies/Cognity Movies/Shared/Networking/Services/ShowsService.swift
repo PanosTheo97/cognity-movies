@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HeroesService {
+class ShowsService {
     
     // MARK: - Methods
     

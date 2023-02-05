@@ -25,10 +25,10 @@ class SplashFlowCoordinator: BaseFlowCoordinatorProtocol {
     // MARK: - Methods
 
    func moveToHome() {
-//        DispatchQueue.main.asyncAfter(deadline: .now()+2) {
-//            guard let homeViewController = self.splashDIContainer.homeModule.makeHomeViewController() else { return }
-//            self.splashViewController?.navigationController?.pushViewController(homeViewController, animated: true)
-//        }
+        DispatchQueue.main.asyncAfter(deadline: .now()+2) {
+            guard let homeViewController = self.splashDIContainer.homeModule.makeHomeViewController() else { return }
+            self.splashViewController?.navigationController?.pushViewController(homeViewController, animated: true)
+        }
     }
 
 }
