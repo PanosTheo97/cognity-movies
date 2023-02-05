@@ -67,7 +67,9 @@ class HomeShowTableViewCell: UITableViewCell {
         self.showImageView.displayImage(url: showData.image?.getThumbnailUrl(), placeholder: nil)
         self.showNameLabel.text = showData.name
         if let showRating = showData.rating?.average {
-            self.ratingLabel.text = "Rating: \(showRating)"
+            let ratingText = NSMutableAttributedString(string: "Rating: ")
+            ratingText.append(showRating.getColoredRatting())
+            self.ratingLabel.attributedText = ratingText
         } else {
             self.ratingLabel.text = "Rating: -"
         }

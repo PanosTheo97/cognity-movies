@@ -77,6 +77,7 @@
 		86EE1B6E298FD6EB00F2EBCA /* ShowDetailsShowDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B6C298FD6EB00F2EBCA /* ShowDetailsShowDetailsTableViewCell.swift */; };
 		86EE1B6F298FD6EB00F2EBCA /* ShowDetailsShowDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86EE1B6D298FD6EB00F2EBCA /* ShowDetailsShowDetailsTableViewCell.xib */; };
 		86EE1B72298FDADE00F2EBCA /* ShowDetailsSetupUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B71298FDADE00F2EBCA /* ShowDetailsSetupUseCase.swift */; };
+		86EE1B7429900F0400F2EBCA /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE1B7329900F0400F2EBCA /* DoubleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,6 +155,7 @@
 		86EE1B6C298FD6EB00F2EBCA /* ShowDetailsShowDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsShowDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		86EE1B6D298FD6EB00F2EBCA /* ShowDetailsShowDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowDetailsShowDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		86EE1B71298FDADE00F2EBCA /* ShowDetailsSetupUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsSetupUseCase.swift; sourceTree = "<group>"; };
+		86EE1B7329900F0400F2EBCA /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 				86936C6E298D1375007A5970 /* UICollectionViewExtension.swift */,
 				86936C70298D1391007A5970 /* UIImageViewExtension.swift */,
 				86936C72298D13A7007A5970 /* JSONExtension.swift */,
+				86EE1B7329900F0400F2EBCA /* DoubleExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -436,8 +439,8 @@
 		86EE1B18298FA69C00F2EBCA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				86EE1B27298FA99E00F2EBCA /* UseCases */,
 				86EE1B1F298FA77900F2EBCA /* HomeViewModel.swift */,
+				86EE1B27298FA99E00F2EBCA /* UseCases */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -786,6 +789,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EE1B7429900F0400F2EBCA /* DoubleExtension.swift in Sources */,
 				86EE1B34298FADED00F2EBCA /* HomeTableView.swift in Sources */,
 				86EE1B05298FA14A00F2EBCA /* NetworkManager.swift in Sources */,
 				86EE1B46298FB2D400F2EBCA /* HomeNoContentTableViewCell.swift in Sources */,

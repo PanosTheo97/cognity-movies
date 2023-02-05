@@ -29,7 +29,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki0-Xr-FLr">
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki0-Xr-FLr">
                         <rect key="frame" x="16" y="69.5" width="288" height="145.5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="textColor" systemColor="labelColor"/>
@@ -51,7 +51,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="showDescriptionTextView" destination="Ki0-Xr-FLr" id="vjc-2w-wwA"/>
+                <outlet property="showDescriptionTextView" destination="Ki0-Xr-FLr" id="Y2O-X8-yIK"/>
                 <outlet property="showNameLabel" destination="eTV-Cn-Kdu" id="6wg-Cj-CLS"/>
                 <outlet property="showRatingLabel" destination="0dO-hf-sxd" id="Cjp-FZ-nNe"/>
             </connections>

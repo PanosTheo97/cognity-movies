@@ -30,4 +30,13 @@ class ShowModel: Mappable {
         rating      <- map["rating"]
     }
     
+    func getShowSummary() -> String {
+        if let summary = self.summary {
+           return summary.replacingOccurrences(of: "<.*?>", with: "", options: [.regularExpression])
+        }
+        return ""
+    }
+    
+   
+    
 }

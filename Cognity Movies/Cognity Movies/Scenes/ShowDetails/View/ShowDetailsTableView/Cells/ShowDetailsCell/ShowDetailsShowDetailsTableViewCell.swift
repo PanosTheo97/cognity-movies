@@ -44,7 +44,9 @@ class ShowDetailsShowDetailsTableViewCell: UITableViewCell {
     func setup(showName: String?, showRating: Double?, showDescription: String?) {
         self.showNameLabel.text = showName
         if let showRating = showRating {
-            self.showRatingLabel.text = "Rating: \(showRating)"
+            let ratingText = NSMutableAttributedString(string: "Rating: ")
+            ratingText.append(showRating.getColoredRatting())
+            self.showRatingLabel.attributedText = ratingText
         } else {
             self.showRatingLabel.text = "Rating: -"
         }

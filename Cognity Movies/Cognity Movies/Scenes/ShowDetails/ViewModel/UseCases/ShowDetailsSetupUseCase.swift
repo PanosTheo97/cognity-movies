@@ -15,7 +15,7 @@ class ShowDetailsSetupUseCase {
         showDetailsTableViewDataEnum.append(.showImage(imageUrl: showData.image?.getImageUrl()))
         showDetailsTableViewDataEnum.append(.showDetails(showName: showData.name,
                                                          showRating: showData.rating?.average,
-                                                         showDescription: showData.summary))
+                                                         showDescription: showData.getShowSummary()))
         completion(showDetailsTableViewDataEnum)
     }
     
